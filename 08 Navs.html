@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Navegación con Bootstrap</title>
+</head>
+<body>
+  <h1 class="text-center">Componente de navegación (nav)</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <h2>nav básico I</h2>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link active">Activo</a></li> <!-- la clase active no hace ninguna diferencia -->
+          <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+          <li class="nav-item"><a href="#" class="nav-link disabled">Inhabilitado</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <h2>nav con pills y dropdown</h2>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active">Enlace 1</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Enlace 2</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Enlace 3</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">Persiana</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Enlace a 1</a>
+              <a href="#" class="dropdown-item">Enlace a 2</a>
+              <a href="#" class="dropdown-item">Enlace a 3</a>
+              <div class="dropdown-divider"></div> <!-- Linea separadora del menú persiana -->
+              <a href="#" class="dropdown-item">Enlace a 4</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

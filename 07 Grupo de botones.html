@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Grupo de botones</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Grupo de botones</h1>
+    <div class="row">
+      <div class="col-sm">
+        <h3>Botones básicos</h3>
+        <div class="btn-group" role="group" aria-label="Primer grupo">
+          <button type="button" class="btn btn-secondary">Izquierdo</button>
+          <button type="button" class="btn btn-secondary">Centro</button>
+          <button type="button" class="btn btn-secondary">Derecho</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <h3>Botones toolbar</h3>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar en grupos">
+          <div class="btn-group mr-2" role="group" aria-label="Primer grupo">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-secondary">4</button>
+            <button type="button" class="btn btn-secondary">5</button>
+          </div>
+          <div class="btn-group mr-5" role="group" aria-label="Segundo grupo"> <!-- El mr-X es la separación del sig. grupo a la derecha
+                                                                                  el valor de X va de 0 a 5-->
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+          </div>
+          <div class="btn-group ml-5" role="group" aria-label="Tercer grupo"> <!-- El ml-X es la separación del sig. grupo a la izquierda
+                                                                                  el valor de X va de 0 a 5 -->
+            <button type="button" class="btn btn-secondary">8</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <h3>Dimensionar botón</h3>
+        <div class="btn-group btn-group-lg" role="group" aria-label="Grupo">
+          <button type="button" class="btn btn-secondary">Botón 1</button>
+          <button type="button" class="btn btn-secondary">Botón 2</button>
+        </div>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Grupo">
+          <button type="button" class="btn btn-secondary">Botón 1</button>
+          <button type="button" class="btn btn-secondary">Botón 2</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <h3>Boton anidado</h3><h4>(Botón Menú persiana)</h4>
+        <div class="btn-group" role="group" aria-label="Grupo 1">
+          <button type="button" class="btn btn-secondary">Botón 1</button>
+          <button type="button" class="btn btn-secondary">Botón 2</button>
+          <button type="button" class="btn btn-secondary">Botón 3</button>
+
+          <div class="btn-group" role="group">
+            <button type="button" id="btnpersiana1" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"   aria-expanded="false">Botón Menú</button> <!-- Para que funcione debe estar declarado el script popper.js -->
+            <div class="dropdown-menu" aria-labelledby="btnpersiana1">
+              <a href="#" class="dropdown-item">Link 1</a>
+              <a href="#" class="dropdown-item">Link 2</a>
+              <a href="#" class="dropdown-item">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

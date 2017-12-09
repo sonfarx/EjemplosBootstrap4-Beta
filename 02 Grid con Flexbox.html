@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Grid con Flexbox</title>
+  <style>
+    .fondo {
+      background: #455A64;
+      height: 100px;
+    }
+    [class^="col"] {
+      background: #ccc;
+      border: 1px solid #555;
+      min-height: 50px;
+    }
+    .row {
+      margin-bottom: 20px; /* Para separar cada renglón creado */
+    }
+  </style>
+</head>
+<body>
+  <!-- Autolayout -->
+  <div class="container">
+    <h2>Autolayout</h2>
+    <div class="row">
+      <div class="col-sm">Celda 1</div>
+      <div class="col-sm">Celda 2</div>
+      <div class="col-sm">Celda 3</div>
+    </div>
+
+  </div>
+  <!-- Autolayout con celda fija -->
+  <div class="container">
+    <h2>Autolayout con celda fija</h2>
+    <div class="row">
+      <div class="col-sm-6">Celda 1 FIJA: col-sm-6</div>
+      <div class="col-sm">Celda 2</div>
+      <div class="col-sm">Celda 3</div>
+    </div>
+    <div class="row">
+      <div class="col-sm">Celda 1</div>
+      <div class="col-sm-7">Celda 2 FIJA: col-sm-7</div>
+      <div class="col-sm">Celda 3</div>
+    </div>
+  </div>
+  <!-- Alineación vertical de celdas -->
+  <div class="container">
+    <h2>Alineación vertical de celdas</h2>
+    <div class="fondo row d-flex align-items-sm-start">
+      <div class="col-sm">Celda 1 Arriba con flexbox</div>
+      <div class="col-sm">Celda 2 Arriba con flexbox</div>
+      <div class="col-sm">Celda 3 Arriba con flexbox</div>
+    </div>
+    <div class="fondo row d-flex align-items-sm-center">
+      <div class="col-sm">Celda 1 en medio con flexbox</div>
+      <div class="col-sm">Celda 2 en medio con flexbox</div>
+      <div class="col-sm">Celda 3 en medio con flexbox</div>
+    </div>
+    <div class="fondo row d-flex align-items-sm-end">
+      <div class="col-sm">Celda 1 abajo con flexbox</div>
+      <div class="col-sm">Celda 2 abajo con flexbox</div>
+      <div class="col-sm">Celda 3 abajo con flexbox</div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

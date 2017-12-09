@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Formularios con Bootstrap</title>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center">Componente FORM con Bootstrap</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form action="">
+          <div class="form-group">
+            <label for="pas1">Password 1</label>
+            <input type="password" class="form-control" id="pas1">
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3>Uso de form-inline</h3>
+        <form action="" class="form-inline">
+          <div class="form-group">
+            <label for="pas2">Password 2</label>
+            <input type="password" class="form-control ml-sm-2" id="pas2">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <form action="">
+          <h3>El form-control-xx</h3>
+          <input type="text" placeholder="Texto grande (lg)" class="form-control form-control-lg">
+          <input type="text" placeholder="Texto default" class="form-control">
+          <input type="text" placeholder="Texto chico (sm)" class="form-control form-control-sm">
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>El form-check</h3>
+        <form action="" class="form-inline"> <!-- Colocando en-linea todos los elementos del FORM -->
+          <div class="form-check">
+          <label for="chk1" class="form-check-label">
+            <input type="checkbox" id="chk1" class="form-check-input">Acepto
+          </label>
+          </div>
+          <div class="form-check disabled">
+          <label for="chk2" class="form-check-label">
+            <input type="checkbox" id="chk2" class="form-check-input ml-sm-2" disabled>No permitido
+          </label>
+          </div>
+        </form>
+        <div class="col-md-7">
+          <form action="">
+            <h4>Radios</h4>
+            <div class="form-inline">
+              <div class="form-check">
+                <label for="rd1" class="form-check-label mr-md-3">
+                  <input type="radio" name="opcion" id="rd1" class="form-check-input">Radio 1
+                </label>
+              </div>
+              <div class="form-check">
+                <label for="rd2" class="form-check-label mr-md-3">
+                  <input type="radio" name="opcion" id="rd2" class="form-check-input">Radio 2
+                </label>
+              </div>
+              <div class="form-check disabled">
+                <label for="rd3" class="form-check-label">
+                  <input type="radio" name="opcion" id="rd3" class="form-check-input" disabled>Radio 3
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

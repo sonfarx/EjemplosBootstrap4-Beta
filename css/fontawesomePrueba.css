@@ -1,0 +1,8 @@
+.fa-cube { /*  Accediendo al elemento que tiene el icono para modificarlo */
+   color: var(--info);
+   font-size: 8em;
+ }
+
+p {
+  text-align: center;
+}

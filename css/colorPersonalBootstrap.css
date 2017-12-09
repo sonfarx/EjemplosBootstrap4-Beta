@@ -1,0 +1,18 @@
+.btn-mi-color {
+  background: #0a3a3e;
+  color: #FFF;
+}
+.btn-mi-color:hover {
+  background: #051718;
+  color: #c6c6c6;
+}
+
+.btn-mi-outline {
+  border: 1px solid #0bdace;
+  background: #FFF;
+  color: #0bdace;
+}
+.btn-mi-outline:hover {
+  color: #FFF;
+  background: #0bdace;
+}

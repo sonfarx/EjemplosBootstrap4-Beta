@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Collapse con Bootstrap</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Componente Collapse</h1>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target="#texto">Botón collapse</button>
+    <a href="#texto" class="btn btn-warning" data-toggle="collapse" aria-expanded="false">Por Enlace</a>
+    <div class="collapse" id="texto">
+      <div class="card card-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptatum corporis, id ullam accusamus quo corrupti nulla perferendis aliquam iusto ea soluta nobis, cum, expedita reiciendis dolor doloribus eveniet, consequuntur.
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Colapsando 3 en una card</h3>
+        <div id="aco1" role="tablist" aria-multiselectable="true">
+          <div class="card">
+
+            <!-- Se mostrará la pestaña bajando del enlace-encabezado -->
+            <div class="card-header" role="tab" id="encabezado1">
+              <h5 class="mb-0"><a href="#colapsa1" data-toggle="collapse" aria-expanded="true" aria-controls="colapsa1">Pestaña 1</a></h5>
+            </div>
+            <!-- con la clase show se mostrará por defauit -->
+            <div id="colapsa1" class="collapse show" role="tabpanel" aria-labelledby="encabezado1" data-parent="#aco1">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt, quae alias ratione fugiat vel consequatur deserunt, exercitationem deleniti reprehenderit ipsam totam molestias perferendis commodi non unde obcaecati sed nihil.</div>
+              </div>
+            </div>
+
+            <!-- Aquí va la segunda pestaña que se mostrará arriba del enlace-encabezado -->
+            <div id="colapsa2" class="collapse" role="tabpanel" aria-labelledby="encabezado2" data-parent="aco1">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias illum sequi aspernatur ut necessitatibus eos, sed corporis assumenda odio officiis mollitia eum hic obcaecati nostrum, quod dignissimos natus numquam deserunt.
+              </div>
+            </div>
+              <div class="card-header" role="tab" id="ecabezado2">
+                <h5 ><a href="#colapsa2" class="collapsed"  data-toggle="collapse" aria-expanded="false" aria-controls="colapsa2">Pestaña 2</a></h5>
+            </div>
+
+            <!-- Similar a la pestaña anterior, se mostrará la pestaña arrriba del enlace-encabezado -->
+            <div id="colapsa3" class="collapse" role="tabpanel" aria-labelledby="encabezado3" data-parent="aco1">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolores harum aliquid eveniet odio ipsam, porro quidem! Nesciunt, laboriosam, perspiciatis, optio pariatur provident odit harum officia possimus itaque, sed facilis!
+              </div>
+            </div>
+              <div class="card-header" role="tab" id="ecabezado3">
+                <h5 class="mb-0"><a href="#colapsa3" class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="colapsa3">Pestaña 3</a></h5>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+          <h3>Colapsando 3 en tres cards</h3>
+          <div id="aco2" role="tablist" aria-multiselectable="true">
+            <div class="card">
+              <div class="card-header" role="tab">
+                <h5><a href="#colapsa1b" data-toggle="collapse" data-parent="#aco2" aria-expanded="true">Pestaña</a></h5>
+              </div>
+              <div id="colapsa1b" role="tabpanel" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit quia aspernatur! Officia repudiandae iusto praesentium laborum corrupti ab delectus inventore rerum, ducimus corporis et obcaecati ut dignissimos, itaque qui.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab">
+                <h5><a href="#colapsa2b" data-toggle="collapse" data-parent="#aco2" aria-expanded="true">Pestaña</a></h5>
+              </div>
+              <div id="colapsa2b" role="tabpanel" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit quia aspernatur! Officia repudiandae iusto praesentium laborum corrupti ab delectus inventore rerum, ducimus corporis et obcaecati ut dignissimos, itaque qui.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab">
+                <h5><a href="#colapsa3b" data-toggle="collapse" data-parent="#aco2" aria-expanded="true">Pestaña</a></h5>
+              </div>
+              <div id="colapsa3b" role="tabpanel" class="collapse show">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit quia aspernatur! Officia repudiandae iusto praesentium laborum corrupti ab delectus inventore rerum, ducimus corporis et obcaecati ut dignissimos, itaque qui.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

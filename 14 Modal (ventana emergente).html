@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Modal con Bootstrap</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Modal con Bootstrap</h1>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ventanita1">Oprímeme</button>
+
+    <!-- También podemos llamar la ventana emergente con el enchor -->
+    <a href="#ventanita1" class="btn btn-warning" data-toggle="modal">Este es enlace</a>
+
+    <div class="modal fade" id="ventanita1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Mensaje de información</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">&times;</button> <!-- &times; da el boton de tache-->
+          </div>
+          <div class="modal-body">
+            <h6>Título mensaje</h6>
+            <p>Lorem ipsum dolor sit amet, <a href="#" data-toggle="tooltip" data-placement="right" title="Este es un tooltip a la derecha">consectetur</a> adipisicing elit. Sed odit a, in assumenda unde dolore doloribus magnam alias fugiat possimus, blanditiis eaque ipsa sapiente rem ducimus aliquid quas! Ut, sequi!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Guardar cambios</button>
+            <button type="button" data-dismiss="modal" class="btn btn-secondary">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip() /*Para que funcionen los tooltips */
+    })
+  </script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
