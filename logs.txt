@@ -1,0 +1,33 @@
+commit ebf6ec5424ac3203985e3f8d2f201fd6d20c7fe2
+Merge: c9133df 3c8db77
+Author: Frank <sonfarx@gmail.com>
+Date:   Sun Dec 10 19:35:25 2017 -0600
+
+    Haciendo Merge branch 'gh-pages'
+
+commit 3c8db778bd9602887edf023f0f3f41444f94b514
+Author: Frank <sonfarx@gmail.com>
+Date:   Sun Dec 10 19:27:50 2017 -0600
+
+    Index.html creado en la rama gh-pages para la página de github
+
+commit c9133dffd8c89ed5f1801dd608973a8bb04aacc6
+Author: Frank <sonfarx@gmail.com>
+Date:   Sun Dec 10 15:40:25 2017 -0600
+
+    Agregando el archivo index
+
+commit f31a4c1269c12159eec65c25cfcdcd78d11c4546
+Author: Frank <sonfarx@gmail.com>
+Date:   Sat Dec 9 17:09:40 2017 -0600
+
+    Eliminando un boton
+
+commit 32d80db818e9cc11a2e48fc1f53c7f9e9beaf8e6
+Author: Frank <sonfarx@gmail.com>
+Date:   Sat Dec 9 16:59:06 2017 -0600
+
+    -m "Comit Inicial"
+    ^X
+    
+    Exit
